@@ -9,6 +9,7 @@ This image use the `buster-slim` variant for smaller resulting size.
 ## Usage
 
 ```sh
+docker run tkhoa2711/debian-curl curl localhost
 docker run tkhoa2711/debian-curl:buster-slim curl localhost
 ```
 
