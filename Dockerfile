@@ -1,9 +1,9 @@
-FROM debian:buster-slim
+FROM debian:12
 
-LABEL maintainer="Khoa Le <ltkhoa2711@gmail.com>"
+LABEL maintainer="toni <ngajarin.team@gmail.com>"
 
 RUN apt-get update \
-    && apt-get install --no-install-recommends -y curl=7.64.0-4+deb10u1 ca-certificates \
+    && apt-get install --no-install-recommends -y curl ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
 CMD ["curl", "-h"]
